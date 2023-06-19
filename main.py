@@ -31,8 +31,8 @@ def encrypt():
 def decrypt():
     random.seed(10)
     encrypted = cv2.imread("encrypted.png")
-    kir = cv2.imread("pic2.jpg")
-    xx , yy , zz = kir.shape
+    image = cv2.imread("pic2.jpg")
+    xx , yy , zz = image.shape
     xxx,yyy,zzz=encrypted.shape
     decrypted = np.zeros((xx , yy) , dtype=np.uint8)
     for i in range(xx):
